@@ -3,3 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+                                        /* MAIN */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+
+}
+
+.header {
+    grid-column: 2 / -1;
+
+    border: 1px solid yellow;
+}
+
+.sidebar {
+    grid-row: 1 / -1
+}
+
+.main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+
+                                /* MAIN SECTION */
+.projects {
+    grid-row: 1 / -1;
+
+    border: 1px solid green;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.announcements {
+    
+}
+
+.trending-container {
+
+}
+
+.project-item {
+    height: 200px;
+}
+
