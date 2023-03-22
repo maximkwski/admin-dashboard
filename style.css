@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-                                        /* MAIN */
+
+                                        /* PAGE LAYOUT */
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -19,7 +20,10 @@
 }
 
 .sidebar {
-    grid-row: 1 / -1
+    grid-row: 1 / -1;
+
+    background-color: bisque;
+    padding: 1.5em;
 }
 
 .main {
@@ -36,8 +40,6 @@
                                 /* MAIN SECTION */
 .projects {
     grid-row: 1 / -1;
-
-    border: 1px solid green;
 }
 
 .project-container {
@@ -56,4 +58,125 @@
 .project-item {
     height: 200px;
 }
+
+                                /* SIDEBAR */
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.dashboard > img {
+    height: 3em;
+} 
+
+.sidebar-links li > img {
+    height: 1.5em;
+}
+
+a {
+   text-decoration: none;
+}
+
+.sidebar ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+   padding: 15px 0 0 10px;
+}
+
+.sidebar ul > span {
+    height: 2em;
+}
+
+.sidebar ul > li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+                            /* HEADER */
+
+[alt="notification"] {
+    height: 1em;
+}
+
+img[alt="search"] {
+    height: 1em;
+    cursor: pointer;
+}
+
+.greeting-panel [alt="profile picture"], .profile-corner [alt="profile picture"] {
+    box-sizing: content-box;
+    height: 1.5em;
+    background-color: rgb(222, 222, 217);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.greeting-panel [alt="profile picture"] {
+    height: 2.5em;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items:center;
+}
+
+.search-panel, .profile-corner, .greeting-panel {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#search {
+    width: 80%;
+    height: 1.5em;
+    background-color: rgb(239, 237, 237);
+    border: none;
+    border-radius: 12px;
+    padding: 12px ;
+
+}
+
+.hi {
+    font-size: 0.7em;
+}
+
+.greeting-panel, .search-panel {
+    padding-left: 1.5em;
+}
+
+.profile-corner, .file-menu {
+    padding-right: 1.5em;
+}
+
+.profile-corner {
+    justify-content: end;
+    gap: 2em;
+    font-weight: 700;
+}
+
+.greeting-panel {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.file-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.file-menu li {
+    box-sizing: content-box;
+    background-color: yellowgreen;
+    padding: 4px 28px;
+    border-radius: 50px;
+}
+
 
