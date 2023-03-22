@@ -48,18 +48,18 @@
     gap: 1.5em;
 }
 
-.announcements {
+.announcements, .trending {
     padding: 1em;
 }
 
-.announcement-container {
+.announcement-container, .trending-container {
     background-color: white;
     border-radius: 10px;
-    padding: 1.5em;
+    padding: 1em;
 
 }
 
-.announcement-item {
+.announcement-item, .trending-item {
     margin: 1em 0;
 }
 
@@ -67,10 +67,6 @@ hr {
     height: 1px;
         background-color: #ccc;
         border: none;
-}
-
-.trending-container {
-
 }
 
 .project-item {
@@ -84,8 +80,26 @@ hr {
     margin-bottom: 5px;
 }
 
-.projects > h3 , .announcements > h3{
+.projects > h3 , .announcements > h3 , .trending > h3{
     margin: 1em 0;
+}
+
+.trending-item {
+    display: flex;
+    gap: 1em;
+}
+
+.trending-item, .announcements p, .main p {
+    color: rgb(170, 167, 167);
+}
+
+.trending-item [alt="icon"] {
+    height: 2em;
+}
+
+.trending-item #myicon {
+    background-color: rgb(222, 222, 217);
+    border-radius: 50%;
 }
 
 
